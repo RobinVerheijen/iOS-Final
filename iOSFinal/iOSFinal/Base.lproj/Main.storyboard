@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O5n-85-P4R">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -20,6 +22,194 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-95" y="303"/>
+        </scene>
+        <!--Bedrijven-->
+        <scene sceneID="JWB-vP-xit">
+            <objects>
+                <viewController id="g58-JM-Kwa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6pW-cN-fxi"/>
+                        <viewControllerLayoutGuide type="bottom" id="hz5-C5-56L"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7W0-hf-9Rr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Bedrijven" image="companies_tabbar" id="ewa-MH-4oJ"/>
+                    <navigationItem key="navigationItem" title="Bedrijven" id="WN8-2p-HYu">
+                        <barButtonItem key="leftBarButtonItem" image="search_navbar" id="QnE-fz-TKz"/>
+                        <barButtonItem key="rightBarButtonItem" image="add_navbar" id="fjQ-Sj-l25">
+                            <connections>
+                                <segue destination="B14-cu-dD1" kind="show" id="NH6-cQ-bRj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBY-7A-i0b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="1513"/>
+        </scene>
+        <!--Bedrijf toevoegen-->
+        <scene sceneID="Xdc-aY-Jau">
+            <objects>
+                <viewController title="Bedrijf toevoegen" id="B14-cu-dD1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wfw-fy-FMK"/>
+                        <viewControllerLayoutGuide type="bottom" id="YR8-JJ-neb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SLk-gB-9HR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_tabbar" translatesAutoresizingMaskIntoConstraints="NO" id="0nk-TN-oGx">
+                                <rect key="frame" x="0.0" y="64" width="600" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="jah-QK-Wv9"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0nk-TN-oGx" firstAttribute="width" secondItem="SLk-gB-9HR" secondAttribute="height" multiplier="1:1" id="Dmn-6I-vyX"/>
+                            <constraint firstItem="0nk-TN-oGx" firstAttribute="top" secondItem="wfw-fy-FMK" secondAttribute="bottom" id="NFy-Nu-pwo"/>
+                            <constraint firstItem="0nk-TN-oGx" firstAttribute="width" secondItem="SLk-gB-9HR" secondAttribute="width" id="cdQ-So-Qtj"/>
+                            <constraint firstItem="0nk-TN-oGx" firstAttribute="leading" secondItem="SLk-gB-9HR" secondAttribute="leadingMargin" constant="-16" id="iJT-wA-Gzh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Dmn-6I-vyX"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDJ-6K-sNV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2064" y="1513"/>
+        </scene>
+        <!--Notities-->
+        <scene sceneID="to9-MR-x5d">
+            <objects>
+                <navigationController id="uKp-pD-bzn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Notities" image="notes_tabbar" id="KPv-6Y-z0N"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="5kd-hy-KV4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8f0-UW-PFI" kind="relationship" relationship="rootViewController" id="gwu-V7-XXM"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nN2-Ij-Im5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="838"/>
+        </scene>
+        <!--Bedrijven-->
+        <scene sceneID="b91-8l-fSa">
+            <objects>
+                <navigationController id="SMZ-De-5WQ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Bedrijven" image="companies_tabbar" id="fdV-1h-kVa"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wKb-gD-Aju">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="g58-JM-Kwa" kind="relationship" relationship="rootViewController" id="maA-FJ-h3I"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Swq-a5-Cok" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="1512"/>
+        </scene>
+        <!--Notities-->
+        <scene sceneID="WHc-tW-iBb">
+            <objects>
+                <viewController title="Notities" id="8f0-UW-PFI" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vqK-JP-2ew"/>
+                        <viewControllerLayoutGuide type="bottom" id="SZg-sf-yxe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kJq-9o-Ah2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notities" image="notes_tabbar" id="COW-en-Gyh"/>
+                    <navigationItem key="navigationItem" title="Notities" id="xvu-T1-uRt">
+                        <barButtonItem key="leftBarButtonItem" image="search_navbar" id="Z6d-EC-V80"/>
+                        <barButtonItem key="rightBarButtonItem" image="compose_navbar" id="gmE-n8-hxB"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="alT-jA-xWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1364" y="838"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="LqV-VW-GZk">
+            <objects>
+                <tabBarController id="O5n-85-P4R" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Cnu-xX-8Zv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uKp-pD-bzn" kind="relationship" relationship="viewControllers" id="dcc-Ge-v3N"/>
+                        <segue destination="SMZ-De-5WQ" kind="relationship" relationship="viewControllers" id="Ox8-MP-Rr3"/>
+                        <segue destination="sIO-5r-PRZ" kind="relationship" relationship="viewControllers" id="cas-pf-hYI"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHO-Zs-KnG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-174" y="1166"/>
+        </scene>
+        <!--Instellingen-->
+        <scene sceneID="zGV-St-1nn">
+            <objects>
+                <viewController title="Instellingen" id="MZs-4u-TXu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aKD-Kg-erQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="hhn-AE-yEe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Hg4-5r-s0u">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Instellingen" image="settings_tabbar" id="dWn-Vk-3nO"/>
+                    <navigationItem key="navigationItem" title="Instellingen" id="UCl-OQ-ehJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1xe-cN-rct" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="2188"/>
+        </scene>
+        <!--Instellingen-->
+        <scene sceneID="hvp-An-OEh">
+            <objects>
+                <navigationController id="sIO-5r-PRZ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Instellingen" image="settings_tabbar" id="6JE-4O-f4A"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="baT-3U-XaX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MZs-4u-TXu" kind="relationship" relationship="rootViewController" id="JMP-9E-l2u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dba-BG-YSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="643" y="2188"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="add_navbar" width="24" height="24"/>
+        <image name="companies_tabbar" width="24" height="24"/>
+        <image name="compose_navbar" width="24" height="24"/>
+        <image name="notes_tabbar" width="25" height="23"/>
+        <image name="search_navbar" width="24" height="24"/>
+        <image name="settings_tabbar" width="25" height="25"/>
+    </resources>
 </document>
