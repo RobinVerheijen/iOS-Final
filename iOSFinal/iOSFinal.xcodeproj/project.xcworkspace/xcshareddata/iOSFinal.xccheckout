@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>93BE4F29-8DD1-4F97-9460-6D2A59F604D0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iOSFinal</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A692A95D49E269D08F440D1B4C5352959D28DBEA</key>
+		<string>https://github.com/RobinVerheijen/iOS-Final.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iOSFinal/iOSFinal.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A692A95D49E269D08F440D1B4C5352959D28DBEA</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/RobinVerheijen/iOS-Final.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A692A95D49E269D08F440D1B4C5352959D28DBEA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A692A95D49E269D08F440D1B4C5352959D28DBEA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Final</string>
+		</dict>
+	</array>
+</dict>
+</plist>
