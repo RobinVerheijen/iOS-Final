@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		810C1B3C1AC9742C002E3B65 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 810C1B3A1AC9742C002E3B65 /* Model.xcdatamodeld */; };
 		DA133C871ABB22D10036F50E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA133C861ABB22D10036F50E /* MapKit.framework */; };
 		DA2455081AC94DBA009BE91E /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2455071AC94DBA009BE91E /* NoteViewController.m */; };
 		DA24550B1AC95511009BE91E /* IntroPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24550A1AC95511009BE91E /* IntroPageViewController.m */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		810C1B3B1AC9742C002E3B65 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DA133C861ABB22D10036F50E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DA2455061AC94DBA009BE91E /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = ../NoteViewController.h; sourceTree = "<group>"; };
 		DA2455071AC94DBA009BE91E /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = ../NoteViewController.m; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				DA2455071AC94DBA009BE91E /* NoteViewController.m */,
 				DAD52C1C1AC0452500DF81B4 /* NoteTextView.h */,
 				DAD52C1D1AC0452500DF81B4 /* NoteTextView.m */,
+				810C1B3A1AC9742C002E3B65 /* Model.xcdatamodeld */,
 			);
 			path = iOSFinal;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				DA2455111AC955D8009BE91E /* IntroViewController.m in Sources */,
 				DA24550B1AC95511009BE91E /* IntroPageViewController.m in Sources */,
 				DA82FE111AB98B0E0098FFEC /* main.m in Sources */,
+				810C1B3C1AC9742C002E3B65 /* Model.xcdatamodeld in Sources */,
 				DAA178951AC02940001EC214 /* NoteCell.m in Sources */,
 				DAD52C1E1AC0452500DF81B4 /* NoteTextView.m in Sources */,
 			);
@@ -464,6 +468,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		810C1B3A1AC9742C002E3B65 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				810C1B3B1AC9742C002E3B65 /* Model.xcdatamodel */,
+			);
+			currentVersion = 810C1B3B1AC9742C002E3B65 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DA82FE031AB98B0E0098FFEC /* Project object */;
 }
