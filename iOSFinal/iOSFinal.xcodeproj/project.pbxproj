@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA133C871ABB22D10036F50E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA133C861ABB22D10036F50E /* MapKit.framework */; };
 		DA82FE111AB98B0E0098FFEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE101AB98B0E0098FFEC /* main.m */; };
 		DA82FE141AB98B0E0098FFEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE131AB98B0E0098FFEC /* AppDelegate.m */; };
 		DA82FE171AB98B0E0098FFEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE161AB98B0E0098FFEC /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		DA82FE1C1AB98B0E0098FFEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA82FE1B1AB98B0E0098FFEC /* Images.xcassets */; };
 		DA82FE1F1AB98B0E0098FFEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA82FE1D1AB98B0E0098FFEC /* LaunchScreen.xib */; };
 		DA82FE2B1AB98B0E0098FFEC /* iOSFinalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE2A1AB98B0E0098FFEC /* iOSFinalTests.m */; };
+		DAA178951AC02940001EC214 /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA178941AC02940001EC214 /* NoteCell.m */; };
+		DAA178981AC02956001EC214 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA178971AC02956001EC214 /* NotesViewController.m */; };
+		DAD52C1E1AC0452500DF81B4 /* NoteTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD52C1D1AC0452500DF81B4 /* NoteTextView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DA133C861ABB22D10036F50E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DA82FE0B1AB98B0E0098FFEC /* iOSFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82FE0F1AB98B0E0098FFEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA82FE101AB98B0E0098FFEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +45,12 @@
 		DA82FE241AB98B0E0098FFEC /* iOSFinalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSFinalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82FE291AB98B0E0098FFEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA82FE2A1AB98B0E0098FFEC /* iOSFinalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSFinalTests.m; sourceTree = "<group>"; };
+		DAA178931AC02940001EC214 /* NoteCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteCell.h; sourceTree = "<group>"; };
+		DAA178941AC02940001EC214 /* NoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCell.m; sourceTree = "<group>"; };
+		DAA178961AC02956001EC214 /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
+		DAA178971AC02956001EC214 /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		DAD52C1C1AC0452500DF81B4 /* NoteTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteTextView.h; sourceTree = "<group>"; };
+		DAD52C1D1AC0452500DF81B4 /* NoteTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA133C871ABB22D10036F50E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +75,7 @@
 		DA82FE021AB98B0E0098FFEC = {
 			isa = PBXGroup;
 			children = (
+				DA133C861ABB22D10036F50E /* MapKit.framework */,
 				DA82FE0D1AB98B0E0098FFEC /* iOSFinal */,
 				DA82FE271AB98B0E0098FFEC /* iOSFinalTests */,
 				DA82FE0C1AB98B0E0098FFEC /* Products */,
@@ -89,6 +102,12 @@
 				DA82FE1B1AB98B0E0098FFEC /* Images.xcassets */,
 				DA82FE1D1AB98B0E0098FFEC /* LaunchScreen.xib */,
 				DA82FE0E1AB98B0E0098FFEC /* Supporting Files */,
+				DAA178961AC02956001EC214 /* NotesViewController.h */,
+				DAA178971AC02956001EC214 /* NotesViewController.m */,
+				DAA178931AC02940001EC214 /* NoteCell.h */,
+				DAA178941AC02940001EC214 /* NoteCell.m */,
+				DAD52C1C1AC0452500DF81B4 /* NoteTextView.h */,
+				DAD52C1D1AC0452500DF81B4 /* NoteTextView.m */,
 			);
 			path = iOSFinal;
 			sourceTree = "<group>";
@@ -219,9 +238,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA178981AC02956001EC214 /* NotesViewController.m in Sources */,
 				DA82FE171AB98B0E0098FFEC /* ViewController.m in Sources */,
 				DA82FE141AB98B0E0098FFEC /* AppDelegate.m in Sources */,
 				DA82FE111AB98B0E0098FFEC /* main.m in Sources */,
+				DAA178951AC02940001EC214 /* NoteCell.m in Sources */,
+				DAD52C1E1AC0452500DF81B4 /* NoteTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +434,7 @@
 				DA82FE301AB98B0E0098FFEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA82FE311AB98B0E0098FFEC /* Build configuration list for PBXNativeTarget "iOSFinalTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +443,7 @@
 				DA82FE331AB98B0E0098FFEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
