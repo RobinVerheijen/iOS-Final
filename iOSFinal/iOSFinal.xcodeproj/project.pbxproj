@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DA133C871ABB22D10036F50E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA133C861ABB22D10036F50E /* MapKit.framework */; };
 		DA2455081AC94DBA009BE91E /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2455071AC94DBA009BE91E /* NoteViewController.m */; };
+		DA24550B1AC95511009BE91E /* IntroPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24550A1AC95511009BE91E /* IntroPageViewController.m */; };
+		DA2455111AC955D8009BE91E /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2455101AC955D8009BE91E /* IntroViewController.m */; };
 		DA82FE111AB98B0E0098FFEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE101AB98B0E0098FFEC /* main.m */; };
 		DA82FE141AB98B0E0098FFEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE131AB98B0E0098FFEC /* AppDelegate.m */; };
 		DA82FE171AB98B0E0098FFEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE161AB98B0E0098FFEC /* ViewController.m */; };
@@ -35,6 +37,10 @@
 		DA133C861ABB22D10036F50E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DA2455061AC94DBA009BE91E /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = ../NoteViewController.h; sourceTree = "<group>"; };
 		DA2455071AC94DBA009BE91E /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = ../NoteViewController.m; sourceTree = "<group>"; };
+		DA2455091AC95511009BE91E /* IntroPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntroPageViewController.h; path = ../IntroPageViewController.h; sourceTree = "<group>"; };
+		DA24550A1AC95511009BE91E /* IntroPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntroPageViewController.m; path = ../IntroPageViewController.m; sourceTree = "<group>"; };
+		DA24550F1AC955D8009BE91E /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IntroViewController.h; path = ../IntroViewController.h; sourceTree = "<group>"; };
+		DA2455101AC955D8009BE91E /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IntroViewController.m; path = ../IntroViewController.m; sourceTree = "<group>"; };
 		DA82FE0B1AB98B0E0098FFEC /* iOSFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82FE0F1AB98B0E0098FFEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA82FE101AB98B0E0098FFEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -99,6 +105,10 @@
 			children = (
 				DA82FE121AB98B0E0098FFEC /* AppDelegate.h */,
 				DA82FE131AB98B0E0098FFEC /* AppDelegate.m */,
+				DA24550F1AC955D8009BE91E /* IntroViewController.h */,
+				DA2455101AC955D8009BE91E /* IntroViewController.m */,
+				DA2455091AC95511009BE91E /* IntroPageViewController.h */,
+				DA24550A1AC95511009BE91E /* IntroPageViewController.m */,
 				DA82FE151AB98B0E0098FFEC /* ViewController.h */,
 				DA82FE161AB98B0E0098FFEC /* ViewController.m */,
 				DA82FE181AB98B0E0098FFEC /* Main.storyboard */,
@@ -247,6 +257,8 @@
 				DAA178981AC02956001EC214 /* NotesViewController.m in Sources */,
 				DA82FE171AB98B0E0098FFEC /* ViewController.m in Sources */,
 				DA82FE141AB98B0E0098FFEC /* AppDelegate.m in Sources */,
+				DA2455111AC955D8009BE91E /* IntroViewController.m in Sources */,
+				DA24550B1AC95511009BE91E /* IntroPageViewController.m in Sources */,
 				DA82FE111AB98B0E0098FFEC /* main.m in Sources */,
 				DAA178951AC02940001EC214 /* NoteCell.m in Sources */,
 				DAD52C1E1AC0452500DF81B4 /* NoteTextView.m in Sources */,
