@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DA133C871ABB22D10036F50E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA133C861ABB22D10036F50E /* MapKit.framework */; };
+		DA2455081AC94DBA009BE91E /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2455071AC94DBA009BE91E /* NoteViewController.m */; };
 		DA82FE111AB98B0E0098FFEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE101AB98B0E0098FFEC /* main.m */; };
 		DA82FE141AB98B0E0098FFEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE131AB98B0E0098FFEC /* AppDelegate.m */; };
 		DA82FE171AB98B0E0098FFEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE161AB98B0E0098FFEC /* ViewController.m */; };
@@ -32,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		DA133C861ABB22D10036F50E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DA2455061AC94DBA009BE91E /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = ../NoteViewController.h; sourceTree = "<group>"; };
+		DA2455071AC94DBA009BE91E /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = ../NoteViewController.m; sourceTree = "<group>"; };
 		DA82FE0B1AB98B0E0098FFEC /* iOSFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA82FE0F1AB98B0E0098FFEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA82FE101AB98B0E0098FFEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 				DAA178971AC02956001EC214 /* NotesViewController.m */,
 				DAA178931AC02940001EC214 /* NoteCell.h */,
 				DAA178941AC02940001EC214 /* NoteCell.m */,
+				DA2455061AC94DBA009BE91E /* NoteViewController.h */,
+				DA2455071AC94DBA009BE91E /* NoteViewController.m */,
 				DAD52C1C1AC0452500DF81B4 /* NoteTextView.h */,
 				DAD52C1D1AC0452500DF81B4 /* NoteTextView.m */,
 			);
@@ -238,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA2455081AC94DBA009BE91E /* NoteViewController.m in Sources */,
 				DAA178981AC02956001EC214 /* NotesViewController.m in Sources */,
 				DA82FE171AB98B0E0098FFEC /* ViewController.m in Sources */,
 				DA82FE141AB98B0E0098FFEC /* AppDelegate.m in Sources */,
