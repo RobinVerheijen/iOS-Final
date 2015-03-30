@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O5n-85-P4R">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -111,15 +110,13 @@
             <objects>
                 <navigationController title="Notes" id="uKp-pD-bzn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Notes" image="notes_tabbar" id="KPv-6Y-z0N"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="5kd-hy-KV4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.99607843139999996" green="0.1764705882" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -135,7 +132,6 @@
             <objects>
                 <navigationController storyboardIdentifier="companies_navigation_controller" title="Companies" useStoryboardIdentifierAsRestorationIdentifier="YES" id="SMZ-De-5WQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Companies" image="companies_tabbar" id="fdV-1h-kVa"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wKb-gD-Aju">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -278,7 +274,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2X9-Xe-sbN">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2X9-Xe-sbN">
                                 <rect key="frame" x="333" y="72" width="251" height="30"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Note Title" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="a3f-EG-sov">
@@ -286,7 +282,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X76-aO-Fsf">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X76-aO-Fsf">
                                         <rect key="frame" x="153" y="0.0" width="90" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="90" id="ABi-sN-ghf"/>
@@ -307,7 +303,7 @@
                                             </mask>
                                         </variation>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="23-03-2015" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RzC-q5-yhr">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="23-03-2015" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RzC-q5-yhr">
                                         <rect key="frame" x="0.0" y="0.0" width="145" height="30"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -463,7 +459,6 @@
                         <viewControllerLayoutGuide type="bottom" id="TIG-uH-IGw"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="GGh-2a-UY5">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="n41-9H-bJB">
@@ -534,10 +529,6 @@
                                 <exclude reference="0XH-hG-Q3B"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="BkM-dw-D29"/>
-                                <exclude reference="NkZ-Jw-ha5"/>
-                                <exclude reference="ukX-8K-OdX"/>
-                                <exclude reference="yGQ-kX-AZU"/>
                                 <exclude reference="xc6-j6-gN2"/>
                                 <exclude reference="zbK-ug-2EN"/>
                                 <exclude reference="42S-O1-Tyf"/>
@@ -547,6 +538,10 @@
                                 <exclude reference="WZ5-d6-wyV"/>
                                 <exclude reference="avE-w2-FPx"/>
                                 <exclude reference="z40-d7-ICN"/>
+                                <exclude reference="BkM-dw-D29"/>
+                                <exclude reference="NkZ-Jw-ha5"/>
+                                <exclude reference="ukX-8K-OdX"/>
+                                <exclude reference="yGQ-kX-AZU"/>
                                 <exclude reference="HAK-Yn-24P"/>
                                 <exclude reference="ife-1H-aYr"/>
                             </mask>
@@ -558,10 +553,6 @@
                                 <include reference="0XH-hG-Q3B"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="BkM-dw-D29"/>
-                                <include reference="NkZ-Jw-ha5"/>
-                                <exclude reference="ukX-8K-OdX"/>
-                                <include reference="yGQ-kX-AZU"/>
                                 <include reference="xc6-j6-gN2"/>
                                 <include reference="zbK-ug-2EN"/>
                                 <include reference="42S-O1-Tyf"/>
@@ -571,12 +562,15 @@
                                 <include reference="WZ5-d6-wyV"/>
                                 <exclude reference="avE-w2-FPx"/>
                                 <exclude reference="z40-d7-ICN"/>
+                                <exclude reference="BkM-dw-D29"/>
+                                <include reference="NkZ-Jw-ha5"/>
+                                <exclude reference="ukX-8K-OdX"/>
+                                <include reference="yGQ-kX-AZU"/>
                                 <exclude reference="HAK-Yn-24P"/>
                                 <include reference="ife-1H-aYr"/>
                             </mask>
                         </variation>
                     </view>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="fullWidthButtonConstraint" destination="Nof-IH-pBl" id="nGF-WT-SSj"/>
                         <outlet property="nextButton" destination="0XH-hG-Q3B" id="LOP-O3-SJj"/>
@@ -598,7 +592,6 @@
                         <viewControllerLayoutGuide type="bottom" id="sYR-pq-tgV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="w5c-8M-1oz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GSm-Z9-ejS">
@@ -650,6 +643,9 @@
                                 <exclude reference="sBr-fP-uxZ"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="9dD-Cb-RSg"/>
+                                <exclude reference="HBs-ol-0uk"/>
+                                <exclude reference="gK9-H4-j0c"/>
                                 <exclude reference="bwG-RR-Djk"/>
                                 <exclude reference="kFR-GH-eok"/>
                                 <exclude reference="sq0-ax-9zb"/>
@@ -658,9 +654,6 @@
                                 <exclude reference="DV7-gf-Y9X"/>
                                 <exclude reference="EYL-vd-j1o"/>
                                 <exclude reference="1TK-1h-EV8"/>
-                                <exclude reference="9dD-Cb-RSg"/>
-                                <exclude reference="HBs-ol-0uk"/>
-                                <exclude reference="gK9-H4-j0c"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -670,6 +663,9 @@
                                 <include reference="sBr-fP-uxZ"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="9dD-Cb-RSg"/>
+                                <include reference="HBs-ol-0uk"/>
+                                <include reference="gK9-H4-j0c"/>
                                 <include reference="bwG-RR-Djk"/>
                                 <include reference="kFR-GH-eok"/>
                                 <include reference="sq0-ax-9zb"/>
@@ -678,9 +674,6 @@
                                 <include reference="DV7-gf-Y9X"/>
                                 <include reference="EYL-vd-j1o"/>
                                 <include reference="1TK-1h-EV8"/>
-                                <include reference="9dD-Cb-RSg"/>
-                                <include reference="HBs-ol-0uk"/>
-                                <include reference="gK9-H4-j0c"/>
                             </mask>
                         </variation>
                     </view>
@@ -746,15 +739,13 @@
             <objects>
                 <navigationController id="sIO-5r-PRZ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_tabbar" id="6JE-4O-f4A"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="baT-3U-XaX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="barTintColor" red="0.99607843139999996" green="0.1764705882" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="textColor" red="0.1019607843" green="0.73725490199999999" blue="0.61176470589999998" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
