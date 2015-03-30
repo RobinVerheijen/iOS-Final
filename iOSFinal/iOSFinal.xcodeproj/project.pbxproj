@@ -14,6 +14,7 @@
 		DA2455111AC955D8009BE91E /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2455101AC955D8009BE91E /* IntroViewController.m */; };
 		DA82FE111AB98B0E0098FFEC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE101AB98B0E0098FFEC /* main.m */; };
 		DA82FE141AB98B0E0098FFEC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE131AB98B0E0098FFEC /* AppDelegate.m */; };
+		DA82FE171AB98B0E0098FFEC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE161AB98B0E0098FFEC /* ViewController.m */; };
 		DA82FE1A1AB98B0E0098FFEC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA82FE181AB98B0E0098FFEC /* Main.storyboard */; };
 		DA82FE1C1AB98B0E0098FFEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA82FE1B1AB98B0E0098FFEC /* Images.xcassets */; };
 		DA82FE1F1AB98B0E0098FFEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA82FE1D1AB98B0E0098FFEC /* LaunchScreen.xib */; };
@@ -47,6 +48,8 @@
 		DA82FE101AB98B0E0098FFEC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DA82FE121AB98B0E0098FFEC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DA82FE131AB98B0E0098FFEC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DA82FE151AB98B0E0098FFEC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		DA82FE161AB98B0E0098FFEC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DA82FE191AB98B0E0098FFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA82FE1B1AB98B0E0098FFEC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DA82FE1E1AB98B0E0098FFEC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -108,6 +111,12 @@
 				DA2455101AC955D8009BE91E /* IntroViewController.m */,
 				DA2455091AC95511009BE91E /* IntroPageViewController.h */,
 				DA24550A1AC95511009BE91E /* IntroPageViewController.m */,
+				DA82FE151AB98B0E0098FFEC /* ViewController.h */,
+				DA82FE161AB98B0E0098FFEC /* ViewController.m */,
+				DA82FE181AB98B0E0098FFEC /* Main.storyboard */,
+				DA82FE1B1AB98B0E0098FFEC /* Images.xcassets */,
+				DA82FE1D1AB98B0E0098FFEC /* LaunchScreen.xib */,
+				DA82FE0E1AB98B0E0098FFEC /* Supporting Files */,
 				DAA178961AC02956001EC214 /* NotesViewController.h */,
 				DAA178971AC02956001EC214 /* NotesViewController.m */,
 				DAA178931AC02940001EC214 /* NoteCell.h */,
@@ -116,14 +125,7 @@
 				DA2455071AC94DBA009BE91E /* NoteViewController.m */,
 				DAD52C1C1AC0452500DF81B4 /* NoteTextView.h */,
 				DAD52C1D1AC0452500DF81B4 /* NoteTextView.m */,
-<<<<<<< HEAD
 				810C1B3A1AC9742C002E3B65 /* Model.xcdatamodeld */,
-=======
-				DA82FE1D1AB98B0E0098FFEC /* LaunchScreen.xib */,
-				DA82FE181AB98B0E0098FFEC /* Main.storyboard */,
-				DA82FE1B1AB98B0E0098FFEC /* Images.xcassets */,
-				DA82FE0E1AB98B0E0098FFEC /* Supporting Files */,
->>>>>>> origin/master
 			);
 			path = iOSFinal;
 			sourceTree = "<group>";
@@ -256,6 +258,7 @@
 			files = (
 				DA2455081AC94DBA009BE91E /* NoteViewController.m in Sources */,
 				DAA178981AC02956001EC214 /* NotesViewController.m in Sources */,
+				DA82FE171AB98B0E0098FFEC /* ViewController.m in Sources */,
 				DA82FE141AB98B0E0098FFEC /* AppDelegate.m in Sources */,
 				DA2455111AC955D8009BE91E /* IntroViewController.m in Sources */,
 				DA24550B1AC95511009BE91E /* IntroPageViewController.m in Sources */,
