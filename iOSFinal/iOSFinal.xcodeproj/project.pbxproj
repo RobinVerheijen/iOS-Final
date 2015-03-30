@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81CF44DC1AC9775E00646B8E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81CF44DA1AC9775E00646B8E /* Model.xcdatamodeld */; };
 		DA133C871ABB22D10036F50E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA133C861ABB22D10036F50E /* MapKit.framework */; };
 		DA2455081AC94DBA009BE91E /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2455071AC94DBA009BE91E /* NoteViewController.m */; };
 		DA24550B1AC95511009BE91E /* IntroPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA24550A1AC95511009BE91E /* IntroPageViewController.m */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81CF44DB1AC9775E00646B8E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		DA133C861ABB22D10036F50E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		DA2455061AC94DBA009BE91E /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NoteViewController.h; path = ../NoteViewController.h; sourceTree = "<group>"; };
 		DA2455071AC94DBA009BE91E /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NoteViewController.m; path = ../NoteViewController.m; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		DA82FE0D1AB98B0E0098FFEC /* iOSFinal */ = {
 			isa = PBXGroup;
 			children = (
+				81CF44DA1AC9775E00646B8E /* Model.xcdatamodeld */,
 				DA82FE121AB98B0E0098FFEC /* AppDelegate.h */,
 				DA82FE131AB98B0E0098FFEC /* AppDelegate.m */,
 				DA24550F1AC955D8009BE91E /* IntroViewController.h */,
@@ -260,6 +263,7 @@
 				DA24550B1AC95511009BE91E /* IntroPageViewController.m in Sources */,
 				DA8197F61AC973B1009B554E /* RootViewController.m in Sources */,
 				DA82FE111AB98B0E0098FFEC /* main.m in Sources */,
+				81CF44DC1AC9775E00646B8E /* Model.xcdatamodeld in Sources */,
 				DAA178951AC02940001EC214 /* NoteCell.m in Sources */,
 				DAD52C1E1AC0452500DF81B4 /* NoteTextView.m in Sources */,
 			);
@@ -464,6 +468,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		81CF44DA1AC9775E00646B8E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				81CF44DB1AC9775E00646B8E /* Model.xcdatamodel */,
+			);
+			currentVersion = 81CF44DB1AC9775E00646B8E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = DA82FE031AB98B0E0098FFEC /* Project object */;
 }
