@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vT3-L0-gMI">
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="vT3-L0-gMI">
                     <rect key="frame" x="-8" y="0.0" width="480" height="480"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notalicious" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lnJ-cg-D5N">
@@ -45,9 +45,6 @@
                     <exclude reference="CtN-zz-nrQ"/>
                 </mask>
                 <mask key="constraints">
-                    <exclude reference="1IL-JM-SfA"/>
-                    <exclude reference="qva-s6-ILw"/>
-                    <exclude reference="z8N-Xr-7EV"/>
                     <exclude reference="1pk-nR-4WS"/>
                     <exclude reference="JF0-7t-LaB"/>
                     <exclude reference="oWS-0p-iCJ"/>
@@ -55,6 +52,9 @@
                     <exclude reference="aSc-Lh-5QH"/>
                     <exclude reference="b8X-no-cBG"/>
                     <exclude reference="qTB-bY-S1X"/>
+                    <exclude reference="1IL-JM-SfA"/>
+                    <exclude reference="qva-s6-ILw"/>
+                    <exclude reference="z8N-Xr-7EV"/>
                 </mask>
             </variation>
             <variation key="heightClass=regular-widthClass=compact">
@@ -63,9 +63,6 @@
                     <include reference="CtN-zz-nrQ"/>
                 </mask>
                 <mask key="constraints">
-                    <include reference="1IL-JM-SfA"/>
-                    <include reference="qva-s6-ILw"/>
-                    <include reference="z8N-Xr-7EV"/>
                     <include reference="1pk-nR-4WS"/>
                     <include reference="JF0-7t-LaB"/>
                     <include reference="oWS-0p-iCJ"/>
@@ -73,6 +70,9 @@
                     <include reference="aSc-Lh-5QH"/>
                     <include reference="b8X-no-cBG"/>
                     <include reference="qTB-bY-S1X"/>
+                    <include reference="1IL-JM-SfA"/>
+                    <include reference="qva-s6-ILw"/>
+                    <include reference="z8N-Xr-7EV"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="665" y="580"/>
