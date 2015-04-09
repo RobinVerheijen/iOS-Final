@@ -16,6 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.tabBar.tintColor = [UIColor colorWithRed:254.0/255.0 green:45.0/255.0 blue:62.0/255.0 alpha:1.0];
+//    self.tabBar.tintColor = [UIColor whiteColor];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -25,7 +28,7 @@
     
     if(![userDefaults stringForKey:@"intro_seen"]) {
         
-        NSLog(@"First view");
+        [userDefaults setObject:@"true" forKey:@"intro_seen"];
         UIViewController *introViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"intro_view_controller"];
         [introViewController setModalPresentationStyle: UIModalPresentationFormSheet];
         

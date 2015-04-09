@@ -91,7 +91,7 @@
         
         [nextButton setTitle:@"Next" forState:UIControlStateNormal];
     } else if(index == 2) {
-        [nextButton setTitle:@"Add company" forState:UIControlStateNormal];
+        [nextButton setTitle:@"Finish" forState:UIControlStateNormal];
     }
     
     switch(index) {
@@ -107,7 +107,7 @@
             break;
         case 2:
             childViewController.titleString = @"Notes";
-            childViewController.descriptionString = @"The notes that can be created with Notalicious are greater than ever before! They can contain lists, tables or even images.\n Eager to see how it works? Start by adding your first company now!";
+            childViewController.descriptionString = @"The notes that can be created with Notalicious are greater than ever before! They can contain lists, tables or even images. Eager to see how it works?\n\nStart taking some notes!";
             break;
     }
     [UIView animateWithDuration:0.7
@@ -124,10 +124,9 @@
 
 - (IBAction)nextPageButtonClick:(id)sender {
     
-    if([nextButton.titleLabel.text isEqualToString:@"Add company"]) {
+    if([nextButton.titleLabel.text isEqualToString:@"Finish"]) {
         
-        UINavigationController *addCompanyViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"companies_navigation_controller"];
-        [addCompanyViewController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"add_company_view_controller"] animated:NO];
+        UITabBarController *addCompanyViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"tabbar_controller"];
         [addCompanyViewController setModalTransitionStyle:UIModalTransitionStyleFlipHorizontal];
         [self presentViewController:addCompanyViewController animated:YES completion:nil];
         
