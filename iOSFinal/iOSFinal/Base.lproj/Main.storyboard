@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14D105g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O5n-85-P4R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="O5n-85-P4R">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -45,8 +45,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yle-cd-akn">
-                                <rect key="frame" x="0.0" y="72" width="600" height="100"/>
+                            <button opaque="NO" contentMode="redraw" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yle-cd-akn">
+                                <rect key="frame" x="0.0" y="64" width="600" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="BNA-1m-Rxj"/>
                                 </constraints>
@@ -59,47 +59,62 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="quw-jC-tax">
-                                <rect key="frame" x="16" y="180" width="568" height="30"/>
+                                <rect key="frame" x="16" y="172" width="568" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Uas-8e-Be7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="B14-cu-dD1" id="tA1-py-4Mf"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VzZ-8Y-2D2">
-                                <rect key="frame" x="16" y="218" width="568" height="30"/>
+                                <rect key="frame" x="16" y="210" width="568" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="afk-B4-jXx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="B14-cu-dD1" id="SMm-8H-9pB"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Emailaddress" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ji-rc-B8C">
-                                <rect key="frame" x="16" y="256" width="568" height="30"/>
+                                <rect key="frame" x="16" y="248" width="568" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="fWu-bD-jsg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="next"/>
+                                <connections>
+                                    <outlet property="delegate" destination="B14-cu-dD1" id="hMK-kV-6Md"/>
+                                </connections>
                             </textField>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UaH-4M-9ce">
-                                <rect key="frame" x="0.0" y="340" width="600" height="211"/>
-                            </mapView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-5o-1Z8">
-                                <rect key="frame" x="16" y="294" width="568" height="30"/>
+                                <rect key="frame" x="16" y="286" width="568" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="eHt-Gn-Gpn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="B14-cu-dD1" id="lKs-2L-MS8"/>
+                                </connections>
                             </textField>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UaH-4M-9ce">
+                                <rect key="frame" x="0.0" y="332" width="600" height="219"/>
+                                <connections>
+                                    <outlet property="delegate" destination="B14-cu-dD1" id="UqP-dE-DrV"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8hH-5o-1Z8" firstAttribute="top" secondItem="2ji-rc-B8C" secondAttribute="bottom" constant="8" id="36v-5n-nbb"/>
                             <constraint firstItem="8hH-5o-1Z8" firstAttribute="leading" secondItem="SLk-gB-9HR" secondAttribute="leadingMargin" id="J6r-z0-FP3"/>
                             <constraint firstItem="quw-jC-tax" firstAttribute="top" secondItem="yle-cd-akn" secondAttribute="bottom" constant="8" id="L7v-M4-ee5"/>
-                            <constraint firstItem="yle-cd-akn" firstAttribute="top" secondItem="wfw-fy-FMK" secondAttribute="bottom" constant="8" id="Lfj-Df-Rib"/>
+                            <constraint firstItem="yle-cd-akn" firstAttribute="top" secondItem="wfw-fy-FMK" secondAttribute="bottom" id="Lfj-Df-Rib"/>
                             <constraint firstItem="UaH-4M-9ce" firstAttribute="top" secondItem="8hH-5o-1Z8" secondAttribute="bottom" constant="16" id="MVq-bx-fmK"/>
                             <constraint firstItem="YR8-JJ-neb" firstAttribute="top" secondItem="UaH-4M-9ce" secondAttribute="bottom" id="OEp-PY-tg4"/>
                             <constraint firstItem="8hH-5o-1Z8" firstAttribute="trailing" secondItem="SLk-gB-9HR" secondAttribute="trailingMargin" id="QMQ-ss-mKC"/>
