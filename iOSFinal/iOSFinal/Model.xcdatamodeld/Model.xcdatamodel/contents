@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1514" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
-    <entity name="Company" syncable="YES">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D131" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Company" representedClassName="Company" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="company_img" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
@@ -9,20 +9,20 @@
         <relationship name="contact" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contact" inverseName="company" inverseEntity="Contact" syncable="YES"/>
         <relationship name="note" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="company" inverseEntity="Note" syncable="YES"/>
     </entity>
-    <entity name="Contact" syncable="YES">
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
         <attribute name="contact_img" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
         <attribute name="contactlist_ref" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="company" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="contact" inverseEntity="Company" syncable="YES"/>
+        <relationship name="company" maxCount="1" deletionRule="Cascade" destinationEntity="Company" inverseName="contact" inverseEntity="Company" syncable="YES"/>
         <relationship name="note" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="contact" inverseEntity="Note" syncable="YES"/>
     </entity>
-    <entity name="Note" syncable="YES">
+    <entity name="Note" representedClassName="Note" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="text" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
-        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="note" inverseEntity="Company" syncable="YES"/>
-        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="note" inverseEntity="Contact" syncable="YES"/>
+        <relationship name="company" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Company" inverseName="note" inverseEntity="Company" syncable="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Contact" inverseName="note" inverseEntity="Contact" syncable="YES"/>
     </entity>
     <elements>
         <element name="Company" positionX="-389" positionY="-37" width="128" height="148"/>
