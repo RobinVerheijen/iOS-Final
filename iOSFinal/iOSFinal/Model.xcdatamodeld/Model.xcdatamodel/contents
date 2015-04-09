@@ -7,6 +7,7 @@
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <relationship name="contact" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Contact" inverseName="company" inverseEntity="Contact" syncable="YES"/>
+        <relationship name="note" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="company" inverseEntity="Note" syncable="YES"/>
     </entity>
     <entity name="Contact" syncable="YES">
         <attribute name="contact_img" optional="YES" attributeType="Binary" storedInTruthFile="YES" syncable="YES"/>
@@ -14,15 +15,18 @@
         <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <relationship name="company" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="contact" inverseEntity="Company" syncable="YES"/>
+        <relationship name="note" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Note" inverseName="contact" inverseEntity="Note" syncable="YES"/>
     </entity>
     <entity name="Note" syncable="YES">
         <attribute name="date" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="text" optional="YES" attributeType="Binary" syncable="YES"/>
         <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="company" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Company" inverseName="note" inverseEntity="Company" syncable="YES"/>
+        <relationship name="contact" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contact" inverseName="note" inverseEntity="Contact" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Company" positionX="-308" positionY="-100" width="128" height="133"/>
-        <element name="Contact" positionX="-83" positionY="-126" width="128" height="118"/>
-        <element name="Note" positionX="-182" positionY="144" width="128" height="88"/>
+        <element name="Company" positionX="-389" positionY="-37" width="128" height="148"/>
+        <element name="Contact" positionX="-83" positionY="-126" width="128" height="133"/>
+        <element name="Note" positionX="-234" positionY="207" width="128" height="118"/>
     </elements>
 </model>
