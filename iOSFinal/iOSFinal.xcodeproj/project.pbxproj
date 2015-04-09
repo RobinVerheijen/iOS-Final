@@ -22,6 +22,8 @@
 		DA82FE2B1AB98B0E0098FFEC /* iOSFinalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DA82FE2A1AB98B0E0098FFEC /* iOSFinalTests.m */; };
 		DAA178951AC02940001EC214 /* NoteCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA178941AC02940001EC214 /* NoteCell.m */; };
 		DAA178981AC02956001EC214 /* NotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAA178971AC02956001EC214 /* NotesViewController.m */; };
+		DABFF0D61AD683890053C690 /* CompanyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DABFF0D51AD683890053C690 /* CompanyViewController.m */; };
+		DABFF0D81AD684470053C690 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABFF0D71AD684470053C690 /* QuartzCore.framework */; };
 		DAD52C1E1AC0452500DF81B4 /* NoteTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAD52C1D1AC0452500DF81B4 /* NoteTextView.m */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +65,9 @@
 		DAA178941AC02940001EC214 /* NoteCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteCell.m; sourceTree = "<group>"; };
 		DAA178961AC02956001EC214 /* NotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotesViewController.h; sourceTree = "<group>"; };
 		DAA178971AC02956001EC214 /* NotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotesViewController.m; sourceTree = "<group>"; };
+		DABFF0D41AD683890053C690 /* CompanyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompanyViewController.h; sourceTree = "<group>"; };
+		DABFF0D51AD683890053C690 /* CompanyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompanyViewController.m; sourceTree = "<group>"; };
+		DABFF0D71AD684470053C690 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DAD52C1C1AC0452500DF81B4 /* NoteTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteTextView.h; sourceTree = "<group>"; };
 		DAD52C1D1AC0452500DF81B4 /* NoteTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteTextView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABFF0D81AD684470053C690 /* QuartzCore.framework in Frameworks */,
 				DA133C871ABB22D10036F50E /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,6 +95,7 @@
 		DA82FE021AB98B0E0098FFEC = {
 			isa = PBXGroup;
 			children = (
+				DABFF0D71AD684470053C690 /* QuartzCore.framework */,
 				DA133C861ABB22D10036F50E /* MapKit.framework */,
 				DA82FE0D1AB98B0E0098FFEC /* iOSFinal */,
 				DA82FE271AB98B0E0098FFEC /* iOSFinalTests */,
@@ -127,6 +134,8 @@
 				DA2455071AC94DBA009BE91E /* NoteViewController.m */,
 				DAD52C1C1AC0452500DF81B4 /* NoteTextView.h */,
 				DAD52C1D1AC0452500DF81B4 /* NoteTextView.m */,
+				DABFF0D41AD683890053C690 /* CompanyViewController.h */,
+				DABFF0D51AD683890053C690 /* CompanyViewController.m */,
 				DA82FE1D1AB98B0E0098FFEC /* LaunchScreen.xib */,
 				DA82FE181AB98B0E0098FFEC /* Main.storyboard */,
 				DA82FE1B1AB98B0E0098FFEC /* Images.xcassets */,
@@ -261,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DABFF0D61AD683890053C690 /* CompanyViewController.m in Sources */,
 				DA2455081AC94DBA009BE91E /* NoteViewController.m in Sources */,
 				DAA178981AC02956001EC214 /* NotesViewController.m in Sources */,
 				DA82FE141AB98B0E0098FFEC /* AppDelegate.m in Sources */,
@@ -394,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSFinal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -404,6 +415,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = iOSFinal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
